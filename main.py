@@ -1,5 +1,5 @@
 # --- Importar as bibliotecas --- #
-import pyperclip
+import pyp3rclip
 import streamlit as st
 from deep_translator import GoogleTranslator
 
@@ -24,4 +24,4 @@ with c_3:
         traducao = GoogleTranslator(source='en', target='pt').translate(text=texto)
 
         # --- Copiar o texto --- #
-        pyperclip.copy(traducao)
+        pyp3rclip.copy(traducao)
