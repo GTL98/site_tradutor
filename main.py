@@ -1,7 +1,7 @@
 # --- Importar as bibliotecas --- #
-import pyp3rclip
 import streamlit as st
 from deep_translator import GoogleTranslator
+from st_copy_to_clipboard import st_copy_to_clipboard
 
 # --- Configação da página --- #
 st.set_page_config(page_title='Tradutor', layout='centered')
@@ -24,4 +24,4 @@ with c_3:
         traducao = GoogleTranslator(source='en', target='pt').translate(text=texto)
 
         # --- Copiar o texto --- #
-        pyp3rclip.copy(traducao)
+        st_copy_to_clipboard(traducao)
